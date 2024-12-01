@@ -5,3 +5,10 @@ if (userResponse) {
 else {
     console.log("Дію скасовано");
 }
+// let userResponse = confirm('прпрп');
+// if (userResponse) {
+//     console.log('pisa');
+// }
+// else {
+//     console.log('go');
+// }
