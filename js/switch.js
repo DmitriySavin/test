@@ -95,7 +95,7 @@ switch (QuestionNum) {
     console.log("Укажіть місяць.");
 }
 
-const color = prompt('"червоний" — "стоп", "зелений" — "йти", "жовтий" — "чекати"')
+const color = prompt('"червоний", "зелений", "жовтий"')
 let choice;
 switch (color) {
     case 'червоний':
