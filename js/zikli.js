@@ -11,7 +11,9 @@ while (a < 10) {
     console.log(a, '1');
 }
 for (let b = 1; b <= 20; b = b + 1) {
-    if (b % 2 === 0)
+    if (b % 2 === 1) {
+continue
+    }
     console.log(b, '2');
 }
 for (let c = 0; c <= 64; c = c + 7) {
