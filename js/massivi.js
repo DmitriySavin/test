@@ -26,9 +26,8 @@ console.log(array2)
     }
 }
 // 
-const arr3 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-console.log(arr3[9]);
-// Ну типо это ведь можно было сделать в таком виде ? 2 строки
+const arr3 = [1, 2, 3, 45, 5, 6, 7, 86, 9, 10];
+    console.log(Math.max(...arr3))
 
 const arr4 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 for (let array4 of arr4) {
