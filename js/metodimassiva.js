@@ -1,7 +1,9 @@
 const friends = ['Mango', 'Poly', 'Kivi', 'Ajax'];
-// for (let friend of friends) {
-    console.log(friends.join(' , '))
-// }; Я если честно не понял для чего здесь использовать for 
+for (let a = 1; a <= friends.length; a++) {
+    console.log(friends.slice(0, a).join(', '))
+}
+// Как же сложно было понять это
+
 
 const cards = [
     'Карточка-1',
