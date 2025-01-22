@@ -16,8 +16,8 @@ continue
     }
     console.log(b, '2');
 }
-for (let c = 0; c <= 64; c = c + 7) {
-    console.log(c, '3')
+for (let c = 1; c <= 9; c++) {
+    console.log(`7 * ${c} = ${7 * c}`)
 }
 let v = 0;
 while (v < 5) {
