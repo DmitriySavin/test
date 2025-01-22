@@ -11,6 +11,8 @@ const cards = [
     'Карточка-5',
 ];
 
+cards.indexOf('Карточка-3');
+console.log(cards.indexOf('Карточка-3'));
 cards.splice(2, 1);
 console.log(cards);
 
@@ -18,5 +20,8 @@ console.log(cards);
 cards.splice(4, 0, 'Карточка-6');
 console.log(cards);
 
+
+cards.indexOf('Карточка-4');
+console.log(cards.indexOf('Карточка-4'));
 cards.splice(2, 1, 'Карта-4');
 console.log(cards);
