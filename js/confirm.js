@@ -7,7 +7,7 @@ else {
 }
 // let userResponse = confirm('прпрп');
 // if (userResponse) {
-//     console.log('pisa');
+//     console.log('hf');
 // }
 // else {
 //     console.log('go');
