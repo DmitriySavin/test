@@ -97,8 +97,6 @@ checkForSpam("Меня зовут дима span");
 //     return arr;
 // }
 
-
-
 function showPromt() {
   const numbers = [];
   let total = 0;
@@ -115,8 +113,8 @@ function showPromt() {
         total = total + +num;
       }
       break;
-      }
-      
+    }
+
     if (!isNaN(input)) {
       numbers.push(input);
     } else {
