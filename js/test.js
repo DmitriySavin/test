@@ -51,9 +51,18 @@ delete man.name;
 const dateOfBirth = 15;
 const yearOfBirth = 2000;
 
+
+// console.log(userInfo)
+// Обчислювальни властывости обьекта
+
+const monthOfBirth = 'May';
+const numberOfMonth = 5;
+
 const userInfo = {
     dateOfBirth,
     yearOfBirth,
-
 };
-console.log(userInfo)
+
+// const copyuserinfo = userInfo;
+
+const copyuserinfo = Object.assign({}, userInfo);   
