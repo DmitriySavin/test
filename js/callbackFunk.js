@@ -16,37 +16,36 @@ const randomNum = (input) => {
     return input;
   }
 };
-// randomNum(prompt("Введіть число"));
+randomNum(prompt("Введіть число"));
 
 //
 
-// const applyCallbackToEachElement = (arr1 = [], callback) => {
-//   const arr1Checked = [];
-//   for (let el of arr1) {
-//     const eled = callback(el);
-//     if (eled) {
-//       arr1Checked.push(el);
-//     }
-//   }
-//   return arr1Checked;
-// };
+const applyCallbackToEachElement = (arr1 = [], callback) => {
+  const arr1Checked = [];
+  for (let el of arr1) {
+    const eled = callback(el);
+    if (eled) {
+      arr1Checked.push(el);
+    }
+  }
+  return arr1Checked;
+};
 
-// const callback = (element) => {
-//   return element >= 4;
-// };
+const callback = (element) => {
+  return element >= 3;
+};
 
-// const result = applyCallbackToEachElement([1, 2, 3, 4, 5], callback);
-// console.log(result);
-// applyCallbackToEachElement([1, 2, 3, 4, 5]);
+const result = applyCallbackToEachElement([1, 2, 3, 4, 5], callback);
+console.log(result);
+applyCallbackToEachElement([1, 2, 3, 4, 5]);
 // Я не знаю но вроде оно работает хоть и выдает ошибку
 
 const calculateDiscountedPrice = (price, discount, callback) => {
-  const discountedPrice = price - (price * (discount / price));
+  const discountedPrice = price - price * (discount / price);
   callback(discountedPrice);
-
 };
 const showDiscountPrice = (discountedPrice) => {
   console.log(`Vasha zena ${discountedPrice}`);
 };
 calculateDiscountedPrice(100, 10, showDiscountPrice);
-console.log(showDiscountPrice);
+// console.log(showDiscountPrice);
