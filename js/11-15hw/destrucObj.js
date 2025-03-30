@@ -115,3 +115,16 @@ account.withdraw('100');
 console.log(account.getBalance());
 console.log('Total amount: ' + account.getTransactionTotal(TransactionType.DEPOSIT));
 console.log('Total amount: ' + account.getTransactionTotal(TransactionType.WITHDRAW));
+
+
+
+
+const obj1 = {
+  name: 'dima',
+  age: 16,
+  length: 182,
+  width: 78,
+};
+
+const {name , age , length , width} = obj1;
+// ну типо наверное нет смысла во всех моих файлах деструктуризовать обьекты , по этому напишу так , чтобы понятно было что я помню как это делается
