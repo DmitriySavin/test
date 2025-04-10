@@ -57,16 +57,18 @@ const employees2 = {
   maks: 4000,
 };
 
-function countTotalSalary() {}
-const salaries = Object.values(employees2);
+function countTotalSalary() {
+  const salaries = Object.values(employees2);
 let buffer2 = 0;
 for (const salary of salaries) {
   buffer2 = buffer2 + +salary;
 }
 console.log(buffer2);
+return buffer2;
+}
 countTotalSalary();
-// Не совсем понял суть задания , так что не уверен что правильно
-//
+
+// 
 
 const arr = [
   {
@@ -117,7 +119,10 @@ const allProdcuts = [
 ];
 
 function calculateTotalPrice(allProdcuts, productName) {
-  const calTotPrice = allProdcuts.reduce((acc, {price , quantity}) => acc + price * quantity, 0);
+  // const calTotPrice = allProdcuts.reduce((acc, {price , quantity}) => acc + price * quantity, 0);
+ 
+  const calTotPrice = allProdcuts.filter(obj => obj.productName === productName).reduce((acc,obj) => acc + obj.price * obj.quantity, 0);
   console.log(calTotPrice);
 };
-calculateTotalPrice(allProdcuts, 'price', 'quantity');
+// calculateTotalPrice(allProdcuts, 'price', 'quantity');
+calculateTotalPrice(allProdcuts, 'apelsin');

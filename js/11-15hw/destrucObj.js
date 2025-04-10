@@ -62,7 +62,7 @@ const account = {
    * про те, що зняття такої суми не можливо, недостатньо коштів.
    */
   withdraw(amount) {
-    const transaction = this.createTransaction(amount , this.TransactionType.WITHDRAW);
+    const transaction = createTransaction(amount , this.TransactionType.WITHDRAW);
     if (!amount || amount < 0) {
       return;
     }
