@@ -16,20 +16,45 @@ button1.style.backgroundColor = option.color;
 
 // collections btn
 
-const colorPeckerWrappers = document.querySelector('.js-color-picker');
-const elements = [];
+// const colorPeckerWrappers = document.querySelector('.js-color-picker');
+// const elements = [];
 
+// for (let i = 0; i < colorPickerOptions.length; i++) {
+//   const option = colorPickerOptions[i];
 
-for (let i = 0; i < colorPickerOptions.length; i++) {
-  const option = colorPickerOptions[i];
+//   // const option = colorPickerOptions[0];
+//   const button1 = document.createElement("button");
+//   button1.type = "button";
+//   button1.textContent = option.label;
+//   button1.classList.add('.color-picker');
+//   button1.style.backgroundColor = option.color;
+//   elements.push(button1);
+// };
 
-  // const option = colorPickerOptions[0];
+// colorPeckerWrappers.append(...elements);
+
+// Map
+
+const elements = colorPickerOptions.map((option) => {
   const button1 = document.createElement("button");
   button1.type = "button";
   button1.textContent = option.label;
-  button1.classList.add('.color-picker');
+  button1.classList.add(".color-picker");
   button1.style.backgroundColor = option.color;
-  elements.push(button1);
-};
+  return button1;
+});
+console.log(elements);
+console.log(...elements);
+colorPickerOptions.append(...elements);
 
-colorPeckerWrappers.append(...elements);
+const makeColorPickerOptions = options => {
+    return options.map(option => {
+        const button1 = document.createElement("button");
+        button1.type = "button";
+        button1.textContent = option.label;
+        button1.classList.add(".color-picker");
+        button1.style.backgroundColor = option.color;
+        return button1;
+    })
+};
+const elementsMerkup = makeColorPickerOptions(colorPickerOptions);

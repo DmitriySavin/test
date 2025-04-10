@@ -111,18 +111,11 @@ const getUserNames = users => {
 
 //   
 
-const getUsersWithGender = (users, gender) => 
-    {
-//     for(const obj of users) {
-//         if(obj.gender === gender) {
-//             console.log(`${obj.name} === ${gender}`)
-//         }
-//     }
-//    const nameGenderMale = users.filter(obj => obj.gender === gender);
-
-//     console.log(userNames);  
+const getUsersWithGender = (users, gender) =>  {
+   const nameGenderMale = users.filter(obj => obj.gender === gender ).map(obj => obj.name);
+  console.log(nameGenderMale)
 };
-// getUsersWithGender(users, 'male');
+getUsersWithGender(users, 'male');
 
 // 
 
