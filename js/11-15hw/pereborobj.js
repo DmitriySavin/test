@@ -119,10 +119,7 @@ const allProdcuts = [
 ];
 
 function calculateTotalPrice(allProdcuts, productName) {
-  // const calTotPrice = allProdcuts.reduce((acc, {price , quantity}) => acc + price * quantity, 0);
- 
   const calTotPrice = allProdcuts.filter(obj => obj.productName === productName).reduce((acc,obj) => acc + obj.price * obj.quantity, 0);
   console.log(calTotPrice);
 };
-// calculateTotalPrice(allProdcuts, 'price', 'quantity');
 calculateTotalPrice(allProdcuts, 'apelsin');
