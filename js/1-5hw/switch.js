@@ -93,7 +93,7 @@ switch (QuestionNum) {
     break;
   default:
     console.log("Укажіть місяць.");
-}
+};
 
 const color = prompt('"червоний", "зелений", "жовтий"')
 let choice;
@@ -136,4 +136,4 @@ switch(operators) {
         break
     default:
         console.log("виберіть оператора.")
-}
+};
